@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* ベースのスタイル
+------------------------------------------ */
+body {
+  font-family: "Noto Serif JP", serif;
+  font-size: .9375rem;
+  font-weight: 500;
+  line-height: 1.86;
+  color: #000;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+ul {
+  list-style: none;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* 部品
+------------------------------------------ */
