@@ -139,7 +139,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   background-color: #F0F4FF;
-  margin: 9.8125rem .875rem;
+  margin: 9.8125rem .875rem 3.125rem;
   line-height: 1.7;
   padding-bottom: 2.125rem;
 }
@@ -211,4 +211,76 @@ html, body {
     flex-grow: 2;
     padding-right: .8125rem;
   }
+}
+
+/* お肌を美しく保つ
+----------------------------------------------------*/
+.about__container{
+  position: relative;
+  background-image: url(/assets/image/about/pmv_chamara_sp.jpg);
+  background-position: 51% 3%;
+  height: 42.5rem;
+  background-size: 332%;
+  color: #FFF;
+}
+@media(min-width:768px){
+  .about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url(/assets/image/about/pmv_chamara_pc.jpg);
+    background-position: 100% 54%;
+    background-size: 136%;
+    height: 34.375rem;
+
+  }
+}
+/* タイトル */
+.about__container-top{
+  text-align: center;
+  padding-top: 2.6875rem;
+  line-height: 1.5;
+}
+@media(min-width:768px){
+  .about__container-top{
+    position: absolute;
+    top: 22%;
+    right: 17%;
+    text-align: left;
+    padding-top: 0;
+  }
+}
+.about__container-top h2{
+  font-family: "EB Garamond", serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+@media(min-width:768px){
+  .about__container-top h2{
+    font-size: 2.375rem;
+  }
+}
+.about__container-top p{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* 説明文 */
+.about__container-bottom{
+  padding-top: 1rem;
+  max-width: 22.5rem;
+  margin: 0 auto;
+  line-height: 2.3;
+}
+@media(min-width:768px){
+  .about__container-bottom{
+    position: absolute;
+    top: 40%;
+    right: 16%;
+    max-width: 27rem;
+  }
+}
+.about__container-bottom p{
+  font-size: .875rem;
+  font-weight: 400;
 }
