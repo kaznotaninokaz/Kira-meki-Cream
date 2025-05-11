@@ -3,7 +3,7 @@
 ------------------------------------------ */
 body {
   font-family: "Noto Serif JP", serif;
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.86;
   color: #000;
@@ -283,4 +283,262 @@ html, body {
 .about__container-bottom p{
   font-size: .875rem;
   font-weight: 400;
+}
+
+/* お客様の声
+-------------------------------------------- */
+.voices__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* タイトル */
+.voices__container-title{
+  padding-top: 2.875rem;
+  letter-spacing: .0625rem;
+  line-height: 1.5;
+}
+@media(min-width:768px){
+  .voices__container-title{
+    padding-top: 4.875rem;
+  }
+}
+.voices__container-title h2{
+  font-family: "EB Garamond", serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+@media(min-width:768px){
+  .voices__container-title h2{
+    font-size: 2.8125rem;
+  }
+}
+.voices__container-title p{
+  font-size: 1rem;
+  font-weight: 600;
+}
+@media(min-width:768px){
+  .voices__container-title p{
+    font-size: 1.25rem;
+    padding-left: .625rem;
+  }
+}
+
+/* コンテンツ全体 */
+.voices__slick{
+    width: 100%;
+    padding: 2.1875rem 3.4375rem;
+}
+.voices__slick-inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.875rem;
+  background-color: #DBF7F9;
+}
+@media(min-width:768px){
+  .voices__slick-inner{
+    padding-top: 2.8125rem;
+  }
+  .slick-list {
+    position: relative;
+    max-width: 63.125rem;
+    margin: 0 auto;
+  }
+}
+/* 768px以上で、コンテンツ幅の調整 */
+@media(min-width:768px){
+  .voices__slick-item {
+    margin: 2.375rem .875rem;
+    padding: 0 .3125rem;
+    box-sizing: border-box;
+    max-width: 19.375rem;
+  }
+  .voices__slick {
+    position: relative;
+    padding: 0;
+  }
+}
+
+/* コンテンツ写真 */
+.voices__slick-item-circle{
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: .375rem;
+}
+@media(min-width:768px){
+  .voices__slick-item-circle{
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+.voices__slick-item-circle picture{
+  position: absolute;
+  top: -.125rem;
+  left: -8.6875rem;
+  width: 13.875rem;
+  height: auto;
+}
+@media(min-width:768px){
+  .voices__slick-item-circle picture{
+    left: -9.625rem;
+    width: 15.875rem;
+  }
+}
+/* 各写真設定 */
+.voices__slick-item:nth-child(2) .voices__slick-item-circle picture{
+  top: 0;
+  left: -.875rem;
+  width: 7.375rem;
+}
+@media(min-width:768px){
+  .voices__slick-item:nth-child(2) .voices__slick-item-circle picture{
+    top: -.3125rem;
+    left: -1.25rem;
+    width: 9.1875rem;
+  }
+}
+.voices__slick-item:nth-child(3) .voices__slick-item-circle picture{
+  top: -.3125rem;
+  left: -2.0625rem;
+  width: 8rem;
+}
+@media(min-width:768px){
+  .voices__slick-item:nth-child(3) .voices__slick-item-circle picture{
+    top: -.875rem;
+    left: -2.875rem;
+    width: 10.625rem;
+
+  }
+}
+.voices__slick-item:nth-child(4) .voices__slick-item-circle picture{
+  top: -.1875rem;
+  left: 0;
+  width: 5rem;
+}
+@media(min-width:768px){
+  .voices__slick-item:nth-child(4) .voices__slick-item-circle picture{
+    top: -.25rem;
+    left: 0;
+    width: 6.25rem;
+  }
+}
+.voices__slick-item:nth-child(5) .voices__slick-item-circle picture{
+  top: -.5625rem;
+  left: 0;
+  width: 5rem;
+}
+@media(min-width:768px){
+  .voices__slick-item:nth-child(5) .voices__slick-item-circle picture{
+    top: -.5625rem;
+    left: 0;
+    width: 6.25rem;
+  }
+}
+.voices__slick-item:nth-child(6) .voices__slick-item-circle picture{
+  top: -.75rem;
+  left: -1.375rem;
+  width: 7.5rem;
+}
+@media(min-width:768px){
+  .voices__slick-item:nth-child(6) .voices__slick-item-circle picture{
+    top: -.75rem;
+    left: -1.75rem;
+    width: 9.375rem;
+  }
+}
+
+/* コンテンツテキスト */
+.voices__slick-item p{
+  font-size: .875rem;
+  font-weight: 400;
+  padding-top: .25rem;
+}
+
+/* 説明文 */
+.voices__slick-item-text{
+  padding: .375rem 1rem 1.6875rem .8125rem;
+  line-height: 2;
+}
+@media(min-width:768px){
+  .voices__slick-item-text{
+    padding: 0 .9375rem 2.5rem .875rem;
+    line-height: 1.8;
+    }
+}
+.voices__slick-item-text p{
+  font-size: .875rem;
+  font-weight: 400;
+}
+@media(min-width:768px){
+  .voices__slick-item-text p{
+    font-size: 1rem;
+  }
+}
+
+/* 矢印 */
+.slick-prev, .slick-next {
+  z-index: 10;
+  position: absolute;
+  top: 50.5%;
+  transform: translateY(-50%);
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+@media(min-width:768px){
+  .slick-prev, .slick-next {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}
+
+.slick-prev {
+  left: 1rem;
+}
+@media(min-width:768px){
+  .slick-prev {
+    left: 11.5%;
+  }
+}
+.slick-next {
+  right: 1rem;
+}
+@media(min-width:768px){
+  .slick-next {
+    right: 11.5%;
+  }
+}
+
+/* ドット */
+.slick-dots {
+  bottom: 0%;
+  left: 0%;
+}
+.slick-dots li {
+  width: .5rem;
+}
+/* ドットのボタンの見た目 */
+.slick-dots li button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color:#EEE;
+  opacity: 1;
+}
+
+/* 選択されているドットの色 */
+.slick-dots li.slick-active button {
+  background-color: #00AFBF;
+}
+.slick-dots li button:before{
+  font-size: 0;
 }

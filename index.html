@@ -15,7 +15,11 @@
         <!-- リセットCSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
         <!-- Bootstrap Icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- head内に追加 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Slick -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
         <!-- css -->
         <link rel="stylesheet" href="/assets/style/main.css">
 
@@ -50,7 +54,7 @@
                     <div class="header__bottom-item">
                         <!-- オンラインショップへ -->
                         <a href="#" class="button bule">オンラインショップへ</a>
-                    <!-- 購入する -->
+                        <!-- 購入する -->
                         <form action="/cart/" method="POST" class="button green">
                             <button type="submit">購入する</button>
                         </form>
@@ -76,7 +80,119 @@
                 </div>
             </section>
             <!-- お客様の声-->
-            <section class="voice"></section>
+            <section class="voices">
+                <div class="voices__container">
+                    <!-- タイトル -->
+                    <div class="voices__container-title">
+                        <h2>Voices</h2>
+                        <p>お客様の声</p>
+                    </div>
+                    <div class="voices__slick">
+                        <!-- コンテンツ その1 -->
+                        <div class="voices__slick-item">
+                            <div class="voices__slick-inner">
+                                <!-- コンテンツ写真 -->
+                                <div class="voices__slick-item-circle">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/voice/voice_A_pc.jpg">
+                                        <img src="/assets/image/voice/voice_A_sp.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <p>Aさん</p>
+                                <!-- 説明文 -->
+                                <div class="voices__slick-item-text">
+                                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- コンテンツ その2 -->
+                        <div class="voices__slick-item">
+                            <div class="voices__slick-inner">
+                                <!-- コンテンツ写真 -->
+                                <div class="voices__slick-item-circle">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/voice/voice_B_pc.jpg">
+                                        <img src="/assets/image/voice/voice_B_sp.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <p>Bさん</p>
+                                <!-- 説明文 -->
+                                <div class="voices__slick-item-text">
+                                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- コンテンツ その3 -->
+                        <div class="voices__slick-item">
+                            <div class="voices__slick-inner">
+                                <!-- コンテンツ写真 -->
+                                <div class="voices__slick-item-circle">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/voice/voice_C_pc.jpg">
+                                        <img src="/assets/image/voice/voice_C_sp.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <p>Cさん</p>
+                                <!-- 説明文 -->
+                                <div class="voices__slick-item-text">
+                                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- コンテンツ その4 -->
+                        <div class="voices__slick-item">
+                            <div class="voices__slick-inner">
+                                <!-- コンテンツ写真 -->
+                                <div class="voices__slick-item-circle">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/voice/voice_D_pc.jpg">
+                                        <img src="/assets/image/voice/voice_D_sp.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <p>Dさん</p>
+                                <!-- 説明文 -->
+                                <div class="voices__slick-item-text">
+                                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- コンテンツ その5 -->
+                        <div class="voices__slick-item">
+                            <div class="voices__slick-inner">
+                                <!-- コンテンツ写真 -->
+                                <div class="voices__slick-item-circle">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/voice/voice_E_pc.jpg">
+                                        <img src="/assets/image/voice/voice_E_sp.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <p>Eさん</p>
+                                <!-- 説明文 -->
+                                <div class="voices__slick-item-text">
+                                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- コンテンツ その6 -->
+                        <div class="voices__slick-item">
+                            <div class="voices__slick-inner">
+                                <!-- コンテンツ写真 -->
+                                <div class="voices__slick-item-circle">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/voice/voice_F_pc.jpg">
+                                        <img src="/assets/image/voice/voice_F_sp.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <p>Fさん</p>
+                                <!-- 説明文 -->
+                                <div class="voices__slick-item-text">
+                                    <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- Q & A-->
             <section class="guestion"></section>
         </main>
@@ -88,6 +204,9 @@
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- Slick -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="/assets/script/main.js"></script>
     </body>
 
 </html>
