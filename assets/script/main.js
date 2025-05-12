@@ -18,3 +18,14 @@ $('.voices__slick').slick({
     }
   ]
 });
+
+
+// アコーディオンのタイトルがクリックされたら
+$(function () {
+  $('.question__content-accordion-top').on('click', function () {
+    var content = $(this).next();
+    content.slideToggle(); // アコーディオンの開閉
+    $(this).toggleClass('open'); // クラス切替（必要ならスタイル制御）
+    $(this).find('i').toggleClass('rotate'); // 矢印を回転
+  });
+});

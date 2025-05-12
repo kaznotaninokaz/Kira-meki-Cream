@@ -49,6 +49,45 @@ html, body {
     padding: .875rem 7.1875rem;
   }
 }
+/* コンテナ */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* タイトル */
+.title{
+  padding-top: 2.875rem;
+  letter-spacing: .0625rem;
+  line-height: 1.5;
+}
+@media(min-width:768px){
+.title{
+    padding-top: 4.875rem;
+  }
+}
+.title h2{
+  font-family: "EB Garamond", serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+@media(min-width:768px){
+  .title h2{
+    font-size: 2.8125rem;
+  }
+}
+.title p{
+  font-size: 1rem;
+  font-weight: 600;
+}
+@media(min-width:768px){
+  .title p{
+    font-size: 1.25rem;
+    padding-left: .625rem;
+  }
+}
 
 /* ヘッダー
 ------------------------------------------*/
@@ -288,43 +327,13 @@ html, body {
 /* お客様の声
 -------------------------------------------- */
 .voices__container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-/* タイトル */
-.voices__container-title{
-  padding-top: 2.875rem;
-  letter-spacing: .0625rem;
-  line-height: 1.5;
+  margin-bottom: .625rem;
 }
 @media(min-width:768px){
-  .voices__container-title{
-    padding-top: 4.875rem;
+  .voices__container {
+    margin-bottom: 2.875rem;
   }
 }
-.voices__container-title h2{
-  font-family: "EB Garamond", serif;
-  font-size: 1.875rem;
-  font-weight: 700;
-}
-@media(min-width:768px){
-  .voices__container-title h2{
-    font-size: 2.8125rem;
-  }
-}
-.voices__container-title p{
-  font-size: 1rem;
-  font-weight: 600;
-}
-@media(min-width:768px){
-  .voices__container-title p{
-    font-size: 1.25rem;
-    padding-left: .625rem;
-  }
-}
-
 /* コンテンツ全体 */
 .voices__slick{
     width: 100%;
@@ -590,4 +599,145 @@ html, body {
 }
 .slick-dots li button:before{
   font-size: 0;
+}
+
+/* Q&A
+--------------------------------------------------- */
+.question__container{
+  background: transparent linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%) 0% 0% ;
+  padding-bottom: .6875rem;
+}
+/* タイトル */
+.question__container-title{
+  padding-top: 1.875rem;
+}
+@media(min-width:768px){
+  .question__container-title{
+    line-height: 1.6;
+  }
+}
+.question__container-title h2{
+  text-align: center;
+}
+
+/* コンテンツ */
+@media(min-width:768px){
+  .question__content{
+    width: 100%;
+    max-width: 39.375rem;
+    margin: 0 auto;
+  }
+}
+.question__content-accordion{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  margin: 0 .9375rem 1.125rem;
+  padding: .6875rem .9375rem;
+}
+@media(min-width:768px){
+  .question__content-accordion{
+    margin: 0 .9375rem 1.75rem;
+    padding: .5625rem .9375rem .9375rem;
+  }
+}
+.question__content-accordion:first-child{
+  margin-top:2.25rem ;
+  margin-bottom: 1.3125rem;
+}
+/* コンテンツtop */
+.question__content-accordion-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #444;
+  padding-top: .1875rem;
+  padding-bottom: .625rem;
+}
+@media(min-width:768px){
+  .question__content-accordion-top{
+    padding-top: .0625rem;
+    padding-bottom: 0;
+  }
+}
+.question__content-accordion-top p:nth-child(1){
+  font-family: "EB Garamond", serif;
+  font-size: 1rem;
+  padding-top: .1875rem;
+  letter-spacing: .0625rem;
+}
+@media(min-width:768px){
+  .question__content-accordion-top p:nth-child(1){
+    font-size: 1.125rem;
+    padding-top: .5625rem;
+    padding-left: .5rem;
+  }
+}
+.question__content-accordion-top p:nth-child(2){
+  font-family: "EB Garamond", serif;
+  padding-left: .75rem;
+}
+@media(min-width:768px){
+  .question__content-accordion-top p:nth-child(2){
+    flex: 1;
+    padding-top: .6875rem;
+    padding-left: .9375rem;
+    letter-spacing: .0063rem;
+  }
+}
+.bi-caret-down-fill{
+  width:.625rem ;
+  height: .4031rem;
+  padding: .4375rem .9375rem 0 0;
+}
+@media(min-width:768px){
+  .bi-caret-down-fill{
+    width:.75rem ;
+    height: .4838rem;
+    padding: .8125rem 0 0;
+    margin-right: .6875rem;
+    }
+}
+/* コンテンツbottom */
+.question__content-accordion-bottom{
+  display: none;
+}
+.question__content-accordion-bottom-item{
+  display: flex;
+  flex-direction: row;
+}
+
+.question__content-accordion-bottom p:nth-child(1){
+  font-size: 1rem;
+  padding-top: .125rem;
+  padding-left: .1875rem;
+}
+@media(min-width:768px){
+  .question__content-accordion-bottom p:nth-child(1){
+    font-size: 1.125rem;
+    padding-left: .5625rem;
+  }
+}
+.question__content-accordion-bottom p:nth-child(2){
+  display: inline-block;
+  padding-bottom: 1.5rem;
+  padding-left: .5625rem;
+}
+@media(min-width:768px){
+  .question__content-accordion-bottom p:nth-child(2){
+    padding-bottom: .8125rem;
+    padding-left: .8125rem;
+  }
+}
+
+/* 矢印の回転 */
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+  padding-bottom: 2.25rem;
+}
+@media(min-width:768px){
+  .rotate {
+    padding-bottom: 2.625rem;
+  }
 }
