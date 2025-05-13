@@ -34,7 +34,7 @@
 
     <body>
         <!-- ヘッダー -->
-        <header class="header">
+        <header id="header" class="header">
             <div class="header__container">
                 <!-- ヘッダートップ-->
                 <div class="header__top">
@@ -309,7 +309,21 @@
 
         <!-- フッター -->
         <footer class="footer">
-            <small class="footer__copyright"></small>
+            <div class="footer__container">
+                <div class="footer__container-logo">Kira-meki</div>
+                <!-- ナビゲーション -->
+                <nav class="footer__contaier-nav">
+                    <a href="/company/">会社概要</a>
+                    <a href="/privacy-policy/">個人情報保護ポリシー</a>
+                    <a href="/contact/">お問い合わせ</a>
+                </nav>
+                <!-- コピーライト -->
+                <small class="footer__copyright">© 2023 Kira-meki Inc. All rights reserved.</small>
+            </div>
+            <!-- 上に戻るボタン -->
+            <a href="#top" class="footer__back-to-top" aria-label="ページの先頭へ戻る">
+                <i class="bi bi-arrow-up"></i>
+            </a>
         </footer>
         <!-- タブ -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

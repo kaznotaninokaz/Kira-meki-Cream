@@ -66,7 +66,7 @@ html, body {
     margin: 3rem auto;
     max-width: 62.5rem;
     line-height: 1.7;
-    padding-top: 1.1875rem;
+    padding-top: 1.3125rem;
     padding-bottom: 1.375rem;
   }
 }
@@ -256,6 +256,11 @@ html, body {
 .header__bottom{
   margin-top: 9.8125rem;
 }
+@media(min-width:768px){
+  .header__bottom{
+    margin-top: 0;
+  }
+}
 /* お肌を美しく保つ
 ----------------------------------------------------*/
 .about__container{
@@ -318,7 +323,7 @@ html, body {
 @media(min-width:768px){
   .about__container-bottom{
     position: absolute;
-    top: 40%;
+    top: 39%;
     right: 16%;
     max-width: 27rem;
   }
@@ -744,4 +749,103 @@ html, body {
   .rotate {
     padding-bottom: 2.625rem;
   }
+}
+
+/* フッター
+-------------------------------------------------------- */
+.footer{
+  position: relative;
+  background-color: #0071CE;
+}
+@media(min-width:768px){
+  .footer{
+    padding-bottom: 1.5625rem;
+  }
+}
+.footer__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media(min-width:768px){
+  .footer__container{
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 71rem;
+    margin: 0 auto;
+    padding-top: .375rem;
+
+  }
+}
+/* ロゴ */
+.footer__container-logo{
+  font-family: "Marcellus", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #FFF;
+  padding-top: 1rem;
+  letter-spacing: .3125rem;
+}
+@media(min-width:768px){
+  .footer__container-logo{
+    font-size: 2rem;
+    padding-top: 1rem;
+    letter-spacing: .375rem;
+  }
+}
+/* ナビゲーション */
+.footer__contaier-nav{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.875rem;
+  font-size: .75rem;
+  font-weight: 400;
+  padding-top: .8125rem;
+}
+@media(min-width:768px){
+  .footer__contaier-nav{
+    font-size:clamp(.75rem, 1vw, .875rem);
+    padding-top: 1rem;
+    margin-left: 1.625rem;
+    column-gap: 2rem;
+  }
+}
+
+/* コピーライト */
+.footer__copyright{
+  font-size: .6875rem;
+  font-weight: 400;
+  color: #FFF;
+  letter-spacing: -.0313rem;
+  padding: 1.25rem 0 1.4375rem 1.125rem;
+}
+@media(min-width:768px){
+  .footer__copyright{
+    font-size: .75rem;
+    padding: 22px 0px 0px 0px;
+  }
+}
+
+/* 上に戻るボタン */
+.footer__back-to-top{
+  position: absolute;
+  top: -24%;
+  right: 4%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #0071CE;
+}
+@media(min-width:768px){
+  .footer__back-to-top{
+    top: -37%;
+    right: 10%;
+  }
+}
+
+.bi-arrow-up{
+  display: block;
+  font-size:  1.375rem;
+  color: #FFF;
+  text-align: center;
 }
