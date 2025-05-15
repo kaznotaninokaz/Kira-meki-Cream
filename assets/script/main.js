@@ -10,7 +10,7 @@ $('.voices__slick').slick({
   infinite: false,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1100,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

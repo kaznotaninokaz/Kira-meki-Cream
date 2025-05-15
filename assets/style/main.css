@@ -38,15 +38,23 @@ html, body {
   font-weight: 600;
   color: #FFF;
 }
-.bule{
+.button--bule{
   background-color: #46C4DB;
 }
-.green{
+.button--green{
   background-color: #5DD5AB;
 }
 @media(min-width:768px){
-  .green{
+  .button--green{
     padding: .875rem 7.1875rem;
+  }
+}
+@media(min-width:768px) and (max-width:1000px){
+  .button--bule{
+    padding: .875rem clamp(2.75rem, 6vw, 3.75rem);
+  }
+  .button--green{
+    padding: .875rem clamp(2.75rem, 11.5vw, 7.1875rem);
   }
 }
 /* 商品ページ */
@@ -123,7 +131,7 @@ html, body {
     flex-direction: row;
     justify-content: center;
     row-gap: 0;
-    column-gap: 2rem;
+    column-gap: clamp(0.1rem, 2.2vw, 2rem);
     flex-grow: 2;
     padding-right: .8125rem;
   }
@@ -271,6 +279,11 @@ html, body {
   background-size: 332%;
   color: #FFF;
 }
+@media (min-width: 390px) and (max-width: 767px) {
+  .about__container {
+    background-size: calc(332% - (152 * ((100vw - 390px) / 45)));
+  }
+}
 @media(min-width:768px){
   .about__container{
     display: flex;
@@ -281,6 +294,11 @@ html, body {
     background-size: 136%;
     height: 34.375rem;
 
+  }
+}
+@media (min-width: 768px) and (max-width: 1500px) {
+  .about__container {
+    background-size: calc(161% - (25 * ((100vw - 768px) / 49)));
   }
 }
 /* タイトル */
@@ -298,6 +316,7 @@ html, body {
     padding-top: 0;
   }
 }
+
 .about__container-top h2{
   font-family: "EB Garamond", serif;
   font-size: 1.875rem;
@@ -355,8 +374,15 @@ html, body {
   align-items: center;
   padding-top: 1.875rem;
   background-color: #DBF7F9;
+  margin: 0 auto
 }
-@media(min-width:768px){
+@media(min-width:768px) and (max-width:1099px){
+  .voices__slick-inner{
+    max-width: 41.25rem;
+  }
+}
+
+@media(min-width:1100px){
   .voices__slick-inner{
     padding-top: 2.8125rem;
   }
@@ -367,16 +393,19 @@ html, body {
   }
 }
 /* 768px以上で、コンテンツ幅の調整 */
-@media(min-width:768px){
-  .voices__slick-item {
-    margin: 2.375rem .875rem;
-    padding: 0 .3125rem;
-    box-sizing: border-box;
-    max-width: 19.375rem;
-  }
+@media(min-width:1100px){
   .voices__slick {
     position: relative;
     padding: 0;
+  }
+}
+
+/* 1000px以上で、コンテンツ幅の調整 */
+@media(min-width:1100px){
+  .voices__slick-item {
+    margin: 2.375rem .875rem;
+    padding: 0 .3125rem;
+    max-width: 19.375rem;
   }
 }
 
@@ -483,7 +512,7 @@ html, body {
   padding: .375rem 1rem 1.6875rem .8125rem;
   line-height: 2;
 }
-@media(min-width:768px){
+@media(min-width:1100px){
   .voices__slick-item-text{
     padding: 0 .9375rem 2.5rem .875rem;
     line-height: 1.8;
@@ -493,7 +522,7 @@ html, body {
   font-size: .875rem;
   font-weight: 400;
 }
-@media(min-width:768px){
+@media(min-width:1100px){
   .voices__slick-item-text p{
     font-size: 1rem;
   }
@@ -520,67 +549,27 @@ html, body {
 .slick-prev {
   left: 1rem;
 }
-@media(min-width:768px){
+@media (min-width: 1100px) and (max-width: 1499px) {
+  .slick-prev {
+    left: calc(0.5% + (11 * ((100vw - 1100px) / 27)));
+  }
+}
+@media(min-width:1500px){
   .slick-prev {
     left: 11.5%;
-  }
-}
-@media(min-width:1300px) and (max-width:1400px){
-  .slick-prev {
-    left: 8.5%;
-  }
-}
-@media(min-width:1200px) and (max-width:1300px){
-  .slick-prev {
-    left: 4.5%;
-  }
-}
-@media(min-width:1100px) and (max-width:1200px){
-  .slick-prev {
-    left: .5%;
-  }
-}
-@media(min-width:1000px) and (max-width:1100px){
-  .slick-prev {
-    left: -2%;
-  }
-}
-@media(min-width:768px) and (max-width:1000px){
-  .slick-prev {
-    left: -4%;
   }
 }
 .slick-next {
   right: 1rem;
 }
-@media(min-width:768px){
+@media (min-width: 1100px) and (max-width: 1499px) {
+  .slick-next {
+    right: calc(0.5% + (11 * ((100vw - 1100px) / 27)));
+  }
+}
+@media(min-width:1500px){
   .slick-next {
     right: 11.5%;
-  }
-}
-@media(min-width:1300px) and (max-width:1400px){
-  .slick-next {
-    right: 8.5%;
-  }
-}
-@media(min-width:1200px) and (max-width:1300px){
-  .slick-next {
-    right: 4.5%;
-  }
-}
-@media(min-width:1100px) and (max-width:1200px){
-  .slick-next {
-    right: .5%;
-  }
-}
-@media(min-width:1000px) and (max-width:1100px){
-  .slick-next {
-    right: -2%;
-  }
-}
-@media(min-width:768px) and (max-width:1000px){
-  .slick-next {
-    right: -4%;
   }
 }
 /* ドット */
@@ -795,7 +784,7 @@ html, body {
   }
 }
 /* ナビゲーション */
-.footer__contaier-nav{
+.footer__container-nav{
   display: flex;
   flex-direction: row;
   column-gap: 1.875rem;
@@ -804,7 +793,7 @@ html, body {
   padding-top: .8125rem;
 }
 @media(min-width:768px){
-  .footer__contaier-nav{
+  .footer__container-nav{
     font-size:clamp(.75rem, 1vw, .875rem);
     padding-top: 1rem;
     margin-left: 1.625rem;
