@@ -624,6 +624,11 @@ html, body {
   background: transparent linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%) 0% 0% ;
   padding-bottom: .6875rem;
 }
+@media(min-width:768px){
+  .question__container{
+  padding-bottom: 1.125rem;
+}
+}
 /* タイトル */
 .question__container-title{
   padding-top: 1.875rem;
@@ -654,8 +659,7 @@ html, body {
 }
 @media(min-width:768px){
   .question__content-accordion{
-    margin: 0 .9375rem 1.75rem;
-    padding: .5625rem .9375rem .9375rem;
+    padding: .5625rem .9375rem .875rem;
   }
 }
 .question__content-accordion:first-child{
@@ -664,9 +668,9 @@ html, body {
 }
 /* コンテンツtop */
 .question__content-accordion-top{
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   color: #444;
   padding-top: .1875rem;
   padding-bottom: .625rem;
@@ -696,26 +700,28 @@ html, body {
 .question__content-accordion-top p:nth-child(2){
   font-family: "EB Garamond", serif;
   padding-left: .75rem;
+  padding-right: .5rem;
 }
 @media(min-width:768px){
   .question__content-accordion-top p:nth-child(2){
     flex: 1;
-    padding-top: .6875rem;
-    padding-left: .9375rem;
+    padding: .6875rem 0 .875rem .9375rem;
     letter-spacing: .0063rem;
   }
 }
 .bi-caret-down-fill{
+  position: absolute;
+    right: 1.8%;
+    top: 12%;
   width:.625rem ;
   height: .4031rem;
- padding: .3125rem .375rem 0 0;
 }
 @media(min-width:768px){
   .bi-caret-down-fill{
+    top: 25%;
+    right: 2%;
     width:.75rem ;
     height: .4838rem;
-    padding: .8125rem 0 0;
-    margin-right: .6875rem;
     }
 }
 /* コンテンツbottom */
@@ -727,7 +733,11 @@ html, body {
   display: flex;
   flex-direction: row;
 }
-
+@media(max-width:767px){
+.question__content-accordion-bottom{
+  max-width: 30rem;
+}
+}
 .question__content-accordion-bottom p:nth-child(1){
   font-size: 1rem;
   padding-top: .125rem;
@@ -757,10 +767,14 @@ html, body {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
   margin-top: 1.6875rem;
+  top: 3%;
+  right: 0%;
+  font-size: 1.125rem;
 }
 @media(min-width:768px){
   .question__content-accordion[open] .bi-caret-down-fill {
-  margin-top: 2.125rem;
+  top: 19%;
+  right: 1%;
 }
 }
 
