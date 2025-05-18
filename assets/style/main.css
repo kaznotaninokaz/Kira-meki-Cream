@@ -367,6 +367,14 @@ html, body {
 .voices__slick{
     width: 100%;
     padding: 2.1875rem 3.4375rem;
+    position: relative;
+    max-width:  48rem;
+    margin: 0 auto;
+}
+@media(min-width:768px){
+  .voices__slick{
+    max-width: 63.125rem;
+}
 }
 .voices__slick-inner{
   display: flex;
@@ -546,33 +554,43 @@ html, body {
     height: 3.125rem;
   }
 }
-
 .slick-prev {
   left: 1rem;
-}
-@media (min-width: 1100px) and (max-width: 1499px) {
+  }
+@media(min-width:768px) and (max-width:1099px){
   .slick-prev {
-    left: calc(0.5% + (11 * ((100vw - 1100px) / 27)));
+  left: 0;
   }
 }
-@media(min-width:1500px){
+@media(min-width:1100px) and (max-width:1199px){
   .slick-prev {
-    left: 11.5%;
+  left: -2.5rem;
+  }
+}
+@media(min-width:1200px){
+  .slick-prev {
+  left: -4.5625rem;
   }
 }
 .slick-next {
   right: 1rem;
-}
-@media (min-width: 1100px) and (max-width: 1499px) {
+  }
+@media(min-width:768px) and (max-width:1099px){
   .slick-next {
-    right: calc(0.5% + (11 * ((100vw - 1100px) / 27)));
+  right: 0;
   }
 }
-@media(min-width:1500px){
+@media(min-width:1100px) and (max-width:1199px){
   .slick-next {
-    right: 11.5%;
+  right: -2.5rem;
   }
 }
+@media(min-width:1200px){
+.slick-next {
+  right: -4.5625rem;
+  }
+}
+
 /* ドット */
 .slick-dots {
   bottom: 0%;
@@ -659,6 +677,9 @@ html, body {
     padding-bottom: 0;
   }
 }
+.question__content-accordion-top::-webkit-details-marker {
+  display: none;
+}
 .question__content-accordion-top p:nth-child(1){
   font-family: "EB Garamond", serif;
   font-size: 1rem;
@@ -687,7 +708,7 @@ html, body {
 .bi-caret-down-fill{
   width:.625rem ;
   height: .4031rem;
-  padding: .4375rem .9375rem 0 0;
+ padding: .3125rem .375rem 0 0;
 }
 @media(min-width:768px){
   .bi-caret-down-fill{
@@ -698,7 +719,8 @@ html, body {
     }
 }
 /* コンテンツbottom */
-.question__content-accordion-bottom{
+/* コンテンツbottomの初期状態は非表示（details未open時） */
+.question__content-accordion:not([open]) .question__content-accordion-bottom {
   display: none;
 }
 .question__content-accordion-bottom-item{
@@ -730,16 +752,18 @@ html, body {
 }
 
 /* 矢印の回転 */
-.rotate {
+/* open時に矢印を回転 */
+.question__content-accordion[open] .bi-caret-down-fill {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
-  padding-bottom: 2.25rem;
+  margin-top: 1.6875rem;
 }
 @media(min-width:768px){
-  .rotate {
-    padding-bottom: 2.625rem;
-  }
+  .question__content-accordion[open] .bi-caret-down-fill {
+  margin-top: 2.125rem;
 }
+}
+
 
 /* フッター
 -------------------------------------------------------- */
