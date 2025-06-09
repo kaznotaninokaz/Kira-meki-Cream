@@ -508,7 +508,19 @@ html, body {
     width: 9.375rem;
   }
 }
-
+.voices__slick-item:nth-child(7) .voices__slick-item-circle picture{
+  top: 0;
+  left: -.25rem;
+  width: 7.375rem;
+}
+.voices__slick-item:nth-child(7) .voices__slick-item-circle picture img{
+  width: 75%;
+}
+@media(min-width:768px){
+  .voices__slick-item:nth-child(7) .voices__slick-item-circle picture img{
+    width: 85%;
+  }
+}
 /* コンテンツテキスト */
 .voices__slick-item p{
   font-size: .875rem;
